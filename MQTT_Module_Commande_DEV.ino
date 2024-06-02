@@ -8,8 +8,8 @@ int statusWIFI = WL_IDLE_STATUS; // Initialisation de la variable d'état WiFi e
 
 // WiFi
 WiFiClient clientwifi; // Création d'un client WiFi (utilisant la bibliothèque <ESP8266WiFi.h>)
-#define SSID_WIFI "Danyzabel" // SSID du réseau WiFi auquel se connecter
-#define MDP_WIFI "mqB%:}pbV~EvJ9F!{e(4x4@6Rp.]F5G667j4/Y)4-PS38ydqRp^HHqEv$P784[t" // Mot de passe du réseau WiFi auquel se connecter
+#define SSID_WIFI "" // SSID du réseau WiFi auquel se connecter
+#define MDP_WIFI "" // Mot de passe du réseau WiFi auquel se connecter
 
 // MQTT
 PubSubClient client(clientwifi); // Création d'un client MQTT (utilisant la bibliothèque <ESP8266WiFi.h>) utilisant le client WiFi créée précédemment 
