@@ -17,8 +17,8 @@ char ipsrvMQTT[]  = "qda.duckdns.org"; // Adresse IP du serveur MQTT
 int portsrvMQTT  = 1883; // Port du serveur MQTT
 char idModuleCommande[]  = "moduleCommande01"; // Identifiant du module de commande
 char topic[]  = "qda/moduleCommande01"; // Topic MQTT auquel s'abonner
-char utilisateursrvMQTT[]  = ""; // Utilisateur du serveur MQTT
-char mdpsrvMQTT[]  = ""; // Mot de passe du serveur MQTT
+char utilisateursrvMQTT[]  = "qda"; // Utilisateur du serveur MQTT
+char mdpsrvMQTT[]  = "Passw0rd%1"; // Mot de passe du serveur MQTT
 const String msgdesactivationVMC = "OFF"; // Message pour désactiver la VMC
 const String msgactivationVMC = "ON"; // Message pour activer la VMC
 const long interval_mini = 2000L; // Intervalle minimum entre deux opérations (L = long)
