@@ -9,7 +9,7 @@ int statusWIFI = WL_IDLE_STATUS; // Initialisation de la variable d'état WiFi e
 // WiFi
 WiFiClient clientwifi; // Création d'un client WiFi (utilisant la bibliothèque <ESP8266WiFi.h>)
 #define SSID_WIFI "WiFi-QDA" // SSID du réseau WiFi auquel se connecter
-#define MDP_WIFI "Qda42000!" // Mot de passe du réseau WiFi auquel se connecter
+#define MDP_WIFI "" // Mot de passe du réseau WiFi auquel se connecter
 
 // MQTT
 PubSubClient client(clientwifi); // Création d'un client MQTT (utilisant la bibliothèque <ESP8266WiFi.h>) utilisant le client WiFi créée précédemment 
@@ -18,7 +18,7 @@ int portsrvMQTT  = 1883; // Port du serveur MQTT
 char idModuleCommande[]  = "moduleCommande01"; // Identifiant du module de commande
 char topic[]  = "qda/moduleCommande01"; // Topic MQTT auquel s'abonner
 char utilisateursrvMQTT[]  = "qda"; // Utilisateur du serveur MQTT
-char mdpsrvMQTT[]  = "Passw0rd%1"; // Mot de passe du serveur MQTT
+char mdpsrvMQTT[]  = ""; // Mot de passe du serveur MQTT
 const String msgdesactivationVMC = "OFF"; // Message pour désactiver la VMC
 const String msgactivationVMC = "ON"; // Message pour activer la VMC
 const long interval_mini = 2000L; // Intervalle minimum entre deux opérations (L = long)
